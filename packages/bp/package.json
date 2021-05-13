@@ -5,6 +5,9 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "start": "node -r dotenv/config build/index.js"
+    "start": "node -r dotenv/config build/index.js dotenv_config_path=./../../.env"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }

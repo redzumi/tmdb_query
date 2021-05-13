@@ -8,16 +8,17 @@ export default class Discovery {
 
   constructor() {
     this.configureApi();
-    console.log(this.API_URL, this.API_KEY);
   }
 
-  configureApi() {
+  private configureApi() {
     this.api = axios.create({ baseURL: this.API_URL, responseType: 'json' });
 
+    // append api key cuz api key as header doesnt work :C
     this.api.interceptors.request.use((config) => {
       return { ...config, params: { ...config.params, api_key: this.API_KEY } };
     });
 
+    // damn, wont call data() as usually
     this.api.interceptors.response.use(async (response) => {
       return await response.data;
     });

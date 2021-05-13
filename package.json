@@ -7,8 +7,8 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run --parallel build",
     "start": "lerna run --parallel start",
-    "nlu:server": "cd vendors/botpress/botpress-v12/ && /bp nlu",
-    "nlu:train": "echo hello"
+    "nlu:server": "exec vendors/botpress/botpress-v12/bp nlu",
+    "nlu:train": "lerna run start --scope @tmq/bp"
   },
   "dependencies": {
     "@types/inflected": "^1.1.29",
