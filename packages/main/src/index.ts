@@ -1,7 +1,14 @@
 import Persons from './persons';
 import Discovery from './discovery';
 
+import { dep } from '@tmq/bp';
+
 const main = async () => {
+  console.log('hello from main');
+  dep();
+};
+
+const test = async () => {
   const persons = new Persons();
   await persons.bootstrap();
 

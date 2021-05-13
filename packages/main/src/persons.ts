@@ -5,7 +5,7 @@ import Fuse from 'fuse.js';
 import { transliterate } from 'inflected';
 
 // TODO: move into .env vars
-const PERSONS_DATA_FILE = '../assets/person_ids_05_05_2021.json';
+const PERSONS_DATA_FILE = '../../../assets/person_ids_05_05_2021.json';
 
 export default class Persons {
   static PERSON_KEYS = ['name', 'popularity'];

@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc --project tsconfig.json",
-    "prestart": "yarn run build",
-    "start": "node -r dotenv/config build/index.js",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run --parallel build",
+    "start": "lerna run --parallel start",
     "nlu:server": "cd vendors/botpress/botpress-v12/ && /bp nlu",
     "nlu:train": "echo hello"
   },

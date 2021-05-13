@@ -1,0 +1,8 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "outDir": "build",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+  }
+}
