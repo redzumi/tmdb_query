@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "prestart": "yarn run build",
-    "start": "node -r dotenv/config build/index.js"
+    "start": "node -r dotenv/config build/index.js",
+    "nlu:server": "cd vendors/botpress/botpress-v12/ && /bp nlu",
+    "nlu:train": "echo hello"
   },
   "dependencies": {
     "@types/inflected": "^1.1.29",

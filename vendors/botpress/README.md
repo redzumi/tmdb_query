@@ -1,1 +1,1 @@
-just execute folder of botpress, like ```botpress-v12_21_1-darwin-x64```
+just execute folder of botpress, like ```botpress-v12```, you should rename ```botpress-v12_21_1-darwin-x64```
