@@ -1,0 +1,1 @@
+just execute folder of botpress, like ```botpress-v12_21_1-darwin-x64```

@@ -1,0 +1,23 @@
+{
+  "name": "tmdb-query",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "prestart": "yarn run build",
+    "start": "node -r dotenv/config build/index.js"
+  },
+  "dependencies": {
+    "@types/inflected": "^1.1.29",
+    "axios": "^0.21.1",
+    "dotenv": "^9.0.2",
+    "fuse.js": "^6.4.6",
+    "inflected": "^2.1.0",
+    "querystring": "^0.2.1",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.2"
+  }
+}

@@ -1,0 +1,6 @@
+assets/*.json
+build
+node_modules
+vendors/botpress/botpress*
+.DS_Store
+.env

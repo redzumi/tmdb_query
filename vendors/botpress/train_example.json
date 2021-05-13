@@ -1,0 +1,35 @@
+{
+  "language": "en",
+  "intents": [
+    {
+      "name": "book_flight",
+      "contexts": [ "global" ],
+      "utterances": [
+        "book flight",
+        "book flight to [quebec](destination)",
+        "let's go to [new york](destination) tomorrow"
+      ],
+      "slots": [{ "name": "destination", "entities": [ "airport" ] }]
+    },
+    {
+      "name": "hello",
+      "contexts": [ "global" ],
+      "slots": [],
+      "utterances": [ "good day!", "good morning", "holla", "bonjour", "hey!", "hi", "hello" ]
+    }
+  ],
+  "contexts": [ "global" ],
+  "entities": [
+    {
+      "name": "airport",
+      "type": "list",
+      "fuzzy": 0.9,
+      "values": [
+        {
+          "name": "JFK",
+          "synonyms": [ "New York City", "New York" ]
+        }
+      ]
+    }
+  ]
+}
