@@ -46,10 +46,9 @@ export const main = async () => {
 
   const modelId = await bp.train(train_data, password);
 
-  const predict_data = { utterances: ['хочу посмотреть стражи галактики'] };
-  const predictResult = await bp.predict(predict_data, password, modelId);
-
-  console.log(predictResult);
+  // const predict_data = { utterances: ['хочу посмотреть стражи галактики'] };
+  // const predictResult = await bp.predict(predict_data, password, modelId);
+  // console.log(predictResult);
 };
 
 export const dep = () => {};
