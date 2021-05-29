@@ -1,4 +1,4 @@
-import Persons from './persons';
+import Persons from '@tmq/data/build/assets/tmdb-persons';
 import Discovery from './discovery';
 
 import { dep } from '@tmq/bp';

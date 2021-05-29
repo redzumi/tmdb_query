@@ -1,5 +1,5 @@
 import BotpressModel from './model';
-import Movies from './generators/mosfilm_movies';
+import Movies from '@tmq/data/build/assets/mosfilm';
 
 export const main = async () => {
   const bp = new BotpressModel();
@@ -17,7 +17,7 @@ export const main = async () => {
     contexts: ['global'],
     utterances: toTrimLower(names)
       .map((name) => movies.getRandomIntent(name))
-      .slice(0, 300),
+      .slice(0, 100),
     slots: [{ name: 'movie_name', entities: ['movie'] }],
   };
 
@@ -30,7 +30,7 @@ export const main = async () => {
         name,
         synonyms: [],
       }))
-      .slice(0, 300),
+      .slice(0, 100),
   };
 
   const train_data = {

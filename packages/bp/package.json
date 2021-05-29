@@ -8,6 +8,7 @@
     "start": "node -r dotenv/config build/index.js dotenv_config_path=./../../.env"
   },
   "dependencies": {
+    "@tmq/data": "^1.0.0",
     "axios": "^0.21.1"
   }
 }

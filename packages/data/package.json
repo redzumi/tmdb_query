@@ -1,5 +1,5 @@
 {
-  "name": "@tmq/main",
+  "name": "@tmq/data",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -7,8 +7,5 @@
     "build": "tsc --project tsconfig.json",
     "start": "node -r dotenv/config build/index.js dotenv_config_path=./../../.env"
   },
-  "dependencies": {
-    "@tmq/bp": "^1.0.0",
-    "@tmq/data": "^1.0.0"
-  }
+  "dependencies": {}
 }

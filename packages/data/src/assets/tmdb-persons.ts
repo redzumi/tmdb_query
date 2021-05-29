@@ -5,9 +5,9 @@ import Fuse from 'fuse.js';
 import { transliterate } from 'inflected';
 
 // TODO: move into .env vars
-const PERSONS_DATA_FILE = '../../../assets/person_ids_05_05_2021.json';
+const PERSONS_DATA_FILE = '../../assets/data/tmdb/person_ids_05_05_2021.json';
 
-export default class Persons {
+export default class TMDBPersonsData {
   static PERSON_KEYS = ['name', 'popularity'];
 
   private bootstraped: boolean = false;
@@ -15,7 +15,7 @@ export default class Persons {
 
   bootstrap = async () => {
     const persons = await this.parse();
-    const personsFuze = new Fuse(persons, { keys: Persons.PERSON_KEYS });
+    const personsFuze = new Fuse(persons, { keys: TMDBPersonsData.PERSON_KEYS });
 
     this.persons = personsFuze;
     this.bootstraped = true;

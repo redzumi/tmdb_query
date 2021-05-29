@@ -11,7 +11,3 @@ Should be placed as:
 or
 
 ```movie_ids_05_05_2021.json```
-
-
-#### for example russians movies by "Mosfilm" link: 
-```https://data.mos.ru/apiproxy/opendata/7702155262-film-fund-moscow-cinema/meta.json```

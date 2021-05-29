@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import { resolve as resolvePath } from 'path';
 
-const MOVIES_DATA_FILENAME = '../../data/moscow_cinema_movies.json';
+const MOVIES_DATA_FILENAME = '../../assets/data/mosfilm/moscow_cinema_movies.json';
 
 type Movie = {
   CommonName_en: string;
